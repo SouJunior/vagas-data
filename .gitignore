@@ -1,0 +1,4 @@
+# Ambientes
+.env
+.venv
+env/
