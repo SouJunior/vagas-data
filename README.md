@@ -2,10 +2,10 @@
 Projeto de ETL de vagas para júnior em TI realizado pela SouJúnior
 
 ### Criar Ambiente
-#### Ubuntugi
+#### Ubuntu
 `python3 -m venv venv`
 #### Windows
-
+`python -m venv venv`
 
 ### Instalar Dependências
 `pip install -r requirements.txt`
