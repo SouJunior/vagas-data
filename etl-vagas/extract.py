@@ -11,13 +11,13 @@ HTML_PATH = DATA_PATH + 'html/'
 
 def criar_pasta_caso_inexistente(path):
     """
-    Conferir existência de pasta sem sobrescrever
+    Cria pasta para armazenamento de arquivos html, caso inexistente
     """
-    print(f'Criando pasta: {path}')
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-
-def criar_pasta():
-    criar_pasta_caso_inexistente(HTML_PATH)
+    if not os.path.exists(path):
+        print(f'Criando pasta: {path}')
+        os.makedirs(os.path.dirname(path))
+    else:
+        print(f'Pasta existente: {path}')
 
 #TODO: criar_lista_vagas
 
@@ -26,6 +26,6 @@ def criar_pasta():
 # Função principal executada no script execute.py
 def main():
     print('[Extract] start')
-    criar_pasta()
+    criar_pasta_caso_inexistente(HTML_PATH)
     print('[Extract] end')
 
