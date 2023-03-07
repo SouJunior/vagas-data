@@ -1,5 +1,5 @@
 # Projeto Vagas SouJúnior
-Projeto de ETL de vagas para júnior em TI realizado pela SouJúnior
+Projeto de vagas para júnior em TI realizado pela SouJúnior
 
 ### Criar Ambiente
 #### Ubuntu
@@ -10,11 +10,14 @@ Projeto de ETL de vagas para júnior em TI realizado pela SouJúnior
 ### Instalar Dependências
 `pip install -r requirements.txt`
 
+
+### Rodar Servidor
+`cd logic`
+`python manage.py runserver`
+
 ### Setup Chromedriver 
 #### Ubuntu
 `sudo apt-get install chromium-chromedriver` 
-#### Windows
-
 ### ETL
 `cd etl-vagas`
 `python execute.py`
